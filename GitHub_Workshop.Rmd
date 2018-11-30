@@ -1,0 +1,208 @@
+---
+title: 'GitHub Desktop'
+author: "| Tugba Bozcaga\n| MIT   \n|"
+date: "30 November 2018"
+output:
+  beamer_presentation:
+    colortheme: "dove"
+    slide_level: 2
+    toc: yes
+  slidy_presentation: default
+  ioslides_presentation: default
+editor_options:
+  chunk_output_type: console
+---
+##
+
+Slides: [https://github.com/tugbabozcaga/GitHub-Tutorial](https://github.com/tugbabozcaga/GitHub-Tutorial).
+
+Resource: Berkeley Initiative for Transparency in Social Sciences,  [https://www.bitss.org/](https://www.bitss.org/).
+
+# What is Version Control?
+
+## What is Git
+
+- Git is a software designed to track the **entire** history of the code of a project. 
+
+- Main appeal: facilitates full reproducibility and collaboration. 
+
+- Designed originally for software development, it has gained important traction in the research community. 
+
+- With GUIs (GitHub Desktop) the learning curve decreased and benefits started to exceed the costs. 
+
+**G**raphical **U**ser **I**nterface   
+
+## What is Git
+
+- By code git understands any type of plain text file (`myfile.R`, `myfile.do`, `.tex/.md/.txt/.csv/.etc`).
+
+- Files that are "non-human readable" are called binary files (`myfile.docx`, `myfile.xlxs`, `.pdf/.exe/.dta/.etc`).
+
+- Git can also detect changes in binary files, but it cannot show those changes.
+
+## What is Github
+
+  Github is a company that provides two services (that we care of): 
+  
+- A web hosting service for all our files track with git (public free/private $ or free if academic).  
+- A GUI software (Desktop App) that provides user friendly access to git.
+
+## Goal
+
+**Goal 1:** Keep track of any potentially meaningful modification to your code.  
+
+**Goal 2:** Learn how to collaborate with others using Github.   
+
+## Conventional Method:  
+
+1 - Agree on a naming convention with you co-authors (eg: YYYYMMDDfilename_INITALS).  
+2 - Begin working from the last saved version (eg: `20180325demo_FH.do`).  
+3 - At the end of the day, save on a new version (eg: `20180327demo_FH.do`).  
+
+**Pros:** Easy adoption.   
+
+**Cons:** Lots of files for each document, hard to see changes of your own and others, hard to track the time of changes, errors and time costs.     
+
+## We want to avoid this situation:   
+
+\centering
+
+\includegraphics[height=2.8in]{Images/phdcomics.png}
+
+## Github:  
+
+1 - Name your file `filename` (ideally `01_filename`).
+2 - Takes a snapshot of your work every time you complete relevant change. 
+3 - Updates your entire working folder in the cloud.   
+
+**Pros:** One file per document, track differences across all versions, easily follow when others make a change, works with the cloud. 
+
+**Cons:** Harder adoption.   
+
+## Other reasons to use git
+
+To access a whole new world of knowledge!  
+
+- Collaborate in others' open access projects (e.g. R packages). 
+- Find collaborators for your own projects. 
+
+# Exercises
+
+## Three Exercises: 
+
+1 - **Work on a solo project**.  
+
+2a - Copy and work on another person's project. 
+
+2b - Send an edit suggestion to the other person's project. 
+
+3 - Collaborate with another person in a project.    
+
+## Exercise #1: 
+
+We start on Desktop.
+
+-  Click **File** and **New Repository**.   
+-  Name it **My-First-Repository** and check "Initialize this repository with a README" (Not required but usually a good idea). Find the location of the new repository folder in your computer.
+- Click **Publish repository**. Now your repository is online on Github.com. 
+- You can visit your online repository by clicking **Repository** and **View on Github** in the menu. 
+
+## Exercise #1: 
+-  Drag any text file to your repository folder.  
+-  Type "My first changes" in your text file. 
+-  Check the GitHub Desktop. You will see the change you just made. Click **Commit** to confirm your change. (You can edit and commit as often as you like, GitHub Desktop will memorize all the changes you committed but they won't appear online until you push.)
+- Click **Push** to see your changes online. 
+
+## Three Exercises: 
+
+1 - Work on a solo project.  
+
+2a - **Copy and work on another person's project**. 
+
+2b - Send an edit suggestion to the other person's project. 
+
+3 - Collaborate with another person in a project.    
+
+## Exercise #2a: 
+
+We start in the Cloud.
+
+-  Sign in your [github.com](github.com) account.   
+-  Find the repo **tugbabozcaga/GitHub-Tutorial**.   
+-  **Fork** the repo (You could also simply clone or download, but fork for this one because we'll send a pull request to the repository owner later.).  
+-  Now click **Clone** and **Open in Desktop**.
+-  Now create your own repo. Initiate readme and make some edits.   
+
+## Exercise #2a: 
+
+Now we are on Desktop.
+
+- You will see a window with the button **Clone** in your Github Desktop, click it. 
+- A folder named **GitHub-Tutorial** has been copied to your computer. Find it. 
+- Open the Birthdays.R file. Type your birthday. 
+- Check the GitHub Desktop. You will see the change you just made. Click **Commit** to confirm your change. (You can edit and commit as often as you like, GitHub Desktop will memorize all the changes you committed but they won't appear online until you push.)
+- **Push**.Now if you visit your own Github-Tutorial fork (youraccount/GitHub-Tutorial), you will see all the changes you made through GitHub Desktop.
+
+## Three Exercises: 
+
+1 - Work on a solo project.  
+
+2a - Copy and work on another person's project. 
+
+2b - **Send an edit suggestion to the other person's project.**
+
+3 - Collaborate with another person in a project.      
+    
+## Exercise #2b: 
+
+Now you made changes in this other person's project but they only appear in your fork! You want to send her your suggestions/revisions.
+
+- Now that you confirmed that your online GitHub-Tutorial fork reflects all the changes, you can click **Pull Request**. 
+- Click **Create Pull Request**. Type a short summary explaining your change in the title of the box that emerges, and click **Create Pull Request** again.
+- The owner of the repository will click the following options to accept your changes: **View the Pull Request**, **Merge Pull Request**, and **Confirm Merge**. That means now all your changes have been added to the original folder.
+
+## Three Exercises: 
+
+1 - Work on a solo project.  
+
+2a - Copy and work on another person's project. 
+
+2b - Send an edit suggestion to the other person's project.
+
+3 - **Collaborate with another person in a project**. 
+
+## Exercise #3:
+
+Pair up with a neighbor. One of you be A and one be B for this exercise. You can work with your **My-First-Depository** folder.
+
+- A: In the settings tab for A’s repository on Github.com (that A published above), add B as a collaborator.
+   
+- B: Accept the invitation, and clone A’s repository so that you have it in your own computer. But unlike working in your own repository, don't work in the master copy. Instead, create a branch by clicking the Current Branch menu, click **New Branch** and then **Create Branch**. This way we'll make sure we send a pull request so that A will see our changes, instead of directly changing the original repository.
+
+## Exercise #3:
+
+- B: Now make a change, e.g. "Edit 1 by Collab B", commit, and sync (push) the change. Click **Publish the Branch**. 
+
+- B: Go the the online main repository page. Click **Compare & Pull Request **. If everything looks fine, click **Create Pull Request**.
+
+- A: Go to Pull Requests tab and click on the change made by your partner. Click **Merge Pull Request** and **Confirm Merge**. 
+
+- Switch roles between A & B and repeat.
+
+## Some good habits:   
+- Commit often (<1hr)  
+- If you are collaborating, always pull before you start a new session of work. Also good to pull before pushing.    
+- Think of your remote as the most important set of files. Get used to deleting things in your local machine.    
+
+## Want to learn more: 
+
+- Software Carpentry's [step-by-step tutorial (command line)](https://swcarpentry.github.io/git-novice/).  
+
+- [Garret Christensen's version of this tutorial](https://github.com/BITSS/RT2Amsterdam2018/blob/master/1-GitDemo.md). 
+
+- [Great 20 min intro to Git by Alice Bartlett](https://www.youtube.com/watch?v=eWxxfttcMts)  
+- [Great 2hr tutorial to Github by Jenny Bryan (git ninja)](https://www.rstudio.com/resources/videos/happy-git-and-gihub-for-the-user-tutorial/)
+
+- Jenny Bryan's [Happy Git](http://happygitwithr.com/); [Documentation from Matthew Gentzkow Jesse Shapiro](http://web.stanford.edu/~gentzkow/research/CodeAndData.pdf); Karthik Ram's paper on [Git for Research](https://scfbm.biomedcentral.com/articles/10.1186/1751-0473-8-7) 
+
+
